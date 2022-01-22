@@ -111,9 +111,24 @@ function my_keydown(e) {
         new_image("unique.png");
     }
 
-    if(keyPressed == "67") {
-        console.log("c");
-        new_image("cloud.jpg");
+    if(keyPressed == "69") {
+        console.log("e");
+        new_image("white_block.png");
+    }
+
+    if(keyPressed == "70") {
+        console.log("f");
+        new_image("flower.png");
+    }
+
+    if(keyPressed == "65") {
+        console.log("a");
+        new_image("fruit.png");
+    }
+
+    if(keyPressed == "66") {
+        console.log("b");
+        new_image("mud.png");
     }
 }
 
@@ -122,7 +137,7 @@ function up() {
         player_y = player_y - block_image_height;
         console.log("block image height = " + block_image_height);
         console.log("When up arrow key is pressed, X = " + player_x + "| Y = " + player_y);
-        canvas.remove("player_object");
+        canvas.remove(player_object);
         player_update();
     }
 }
@@ -132,7 +147,7 @@ function down() {
         player_y = player_y + block_image_height;
         console.log("block image height = " + block_image_height);
         console.log("When up arrow key is pressed, X = " + player_x + "| Y = " + player_y);
-        canvas.remove("player_object");
+        canvas.remove(player_object);
         player_update();
     }
 }
@@ -142,7 +157,7 @@ function left() {
         player_x = player_x - block_image_height;
         console.log("block image height = " + block_image_height);
         console.log("When up arrow key is pressed, X = " + player_x + "| Y = " + player_y);
-        canvas.remove("player_object");
+        canvas.remove(player_object);
         player_update();
     }
 }
@@ -152,7 +167,7 @@ function right() {
         player_x = player_x + block_image_height;
         console.log("block image height = " + block_image_height);
         console.log("When up arrow key is pressed, X = " + player_x + "| Y = " + player_y);
-        canvas.remove("player_object");
+        canvas.remove(player_object);
         player_update();
     }
 }
