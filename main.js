@@ -130,6 +130,11 @@ function my_keydown(e) {
         console.log("b");
         new_image("mud.png");
     }
+
+    if(keyPressed == "67") {
+        console.log("c");
+        new_image("water.png");
+    }
 }
 
 function up() {
